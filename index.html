@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SEO AI Automation (Gemini)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <h1>SEO AI Automation</h1>
+    <p class="sub">Enter up to 3 keywords (one per line). Generates publish-ready blogs via Gemini.</p>
+
+    <label>Service / Niche</label>
+    <input id="service" placeholder="SEO & Web Services" value="SEO & Web Services" />
+
+    <label>Audience</label>
+    <input id="audience" placeholder="global audience" value="global audience" />
+
+    <label>Keywords (max 3)</label>
+    <textarea id="keywords" rows="5" placeholder="e.g.
+best seo tips for small business
+web design checklist 2026
+local seo for plumbers"></textarea>
+
+    <label class="row">
+      <input type="checkbox" id="save" checked />
+      Save results to Google Sheets
+    </label>
+
+    <button id="run">Generate</button>
+
+    <pre id="out" class="out">Output will appear here...</pre>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
